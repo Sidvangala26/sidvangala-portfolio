@@ -15,6 +15,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,7 +33,6 @@ body {
     linear-gradient(180deg, #09090b 0%, #0d0d11 35%, #0a0a0d 100%);
   color: rgb(var(--foreground));
   font-feature-settings: "liga" 1, "calt" 1;
-  overflow-x: hidden;
 }
 
 a {
@@ -41,7 +46,7 @@ a {
 }
 
 .container-padding {
-  @apply mx-auto w-full max-w-7xl px-6 md:px-10 xl:px-14;
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-10 xl:px-14;
 }
 
 .glass-surface {
@@ -147,4 +152,15 @@ a {
       transparent 40%
     );
   transition: background 0.08s linear;
+}
+
+img,
+canvas,
+svg,
+video {
+  max-width: 100%;
+}
+
+canvas {
+  display: block;
 }

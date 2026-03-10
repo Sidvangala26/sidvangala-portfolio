@@ -36,7 +36,7 @@ export function Navbar() {
       transition={{ duration: 0.6 }}
       className="fixed top-0 z-50 w-full"
     >
-      <div className="mx-auto max-w-7xl px-6 pt-8">
+      <div className="mx-auto max-w-7xl px-3 pt-4 sm:px-6 sm:pt-8">
         <motion.div
           animate={{
             scale: scrolled ? 0.985 : 1,
@@ -53,9 +53,9 @@ export function Navbar() {
             WebkitBackdropFilter: scrolled ? "blur(22px)" : "blur(16px)",
           }}
           transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-          className="rounded-full border px-5 py-3"
+          className="rounded-full border px-3 py-2 sm:px-5 sm:py-3"
         >
-          <nav className="hide-scrollbar flex items-center justify-center gap-2 overflow-x-auto">
+          <nav className="hide-scrollbar flex w-full items-center gap-1 overflow-x-auto whitespace-nowrap sm:justify-center sm:gap-2">
             {navItems.map((item) => {
               const active = pathname === item.href;
 
@@ -63,7 +63,7 @@ export function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="relative rounded-full px-4 py-2 text-sm transition"
+                  className="relative shrink-0 rounded-full px-3 py-2 text-sm transition sm:px-4"
                 >
                   {active ? (
                     <motion.span
