@@ -10,10 +10,9 @@ export function SmoothScrollProvider({
 }) {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.05,
-      smoothWheel: true,
-      smoothTouch: false,
-    });
+	  duration: 1.05,
+	  smoothWheel: true,
+	});
 
     let frame = 0;
 
