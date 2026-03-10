@@ -15,19 +15,28 @@ export async function POST(req: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-  from: "Sid Portfolio <contact@sidvangala.com>",
-  to: ["vangalasiddardha@gmail.com"],
-  subject: `New Portfolio Message from ${name}`,
-  replyTo: email,
-  html: `
-    <h2>New Portfolio Contact</h2>
-    <p><strong>Name:</strong> ${name}</p>
-    <p><strong>Email:</strong> ${email}</p>
-    <p>${message}</p>
-  `,
-});
+      from: "Sid Portfolio <contact@sidvangala.com>",
+      to: ["vangalasiddardha@gmail.com"],
+      subject: `New Portfolio Message from ${name}`,
+      replyTo: email,
+      html: `
+        <h2>New Portfolio Contact</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
+    });
 
-    return NextResponse.json({ success: true, response });
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json(
+        { error: error.message || "Email failed to send" },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error("Email error:", error);
 
