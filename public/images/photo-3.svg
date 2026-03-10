@@ -1,7 +1,0 @@
-<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="1200" fill="#09090B"/>
-  <circle cx="320" cy="220" r="180" fill="#D4AF37" fill-opacity="0.14"/>
-  <path d="M0 760C170 700 320 690 480 735C640 780 760 880 910 900C1090 925 1210 810 1370 770C1460 747 1540 748 1600 760V1200H0V760Z" fill="#6E5A3A"/>
-  <path d="M0 850C140 820 320 800 470 835C610 868 690 943 860 968C1005 989 1170 938 1310 896C1410 866 1510 852 1600 860V1200H0V850Z" fill="#B38D4E" fill-opacity="0.72"/>
-  <text x="120" y="1090" fill="#E7CA73" fill-opacity="0.75" font-size="42" font-family="Georgia, serif">Moody Travel Frame</text>
-</svg>

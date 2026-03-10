@@ -1,8 +1,0 @@
-<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="1200" fill="#0B0B0D"/>
-  <circle cx="1240" cy="220" r="220" fill="#D4AF37" fill-opacity="0.14"/>
-  <rect x="120" y="150" width="1360" height="900" rx="48" fill="#15151A" stroke="#D4AF37" stroke-opacity="0.25"/>
-  <path d="M380 870C510 700 610 610 740 610C900 610 970 760 1150 760C1250 760 1315 730 1390 675V930H250C280 914 332 897 380 870Z" fill="#C6A15B" fill-opacity="0.48"/>
-  <path d="M615 430C615 346.053 683.053 278 767 278H837C920.947 278 989 346.053 989 430V523C989 606.947 920.947 675 837 675H767C683.053 675 615 606.947 615 523V430Z" fill="#F2E1A8" fill-opacity="0.1" stroke="#E7CA73" stroke-opacity="0.3"/>
-  <text x="160" y="1090" fill="#E7CA73" fill-opacity="0.75" font-size="42" font-family="Georgia, serif">Editorial Portrait</text>
-</svg>
