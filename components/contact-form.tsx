@@ -20,7 +20,7 @@ export function ContactForm() {
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
 
-  const endpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT;
+  const endpoint = "/api/contact";
 
   const isValid = useMemo(() => {
     const emailOk = /\S+@\S+\.\S+/.test(form.email);
@@ -36,11 +36,6 @@ export function ContactForm() {
       return;
     }
 
-    if (!endpoint) {
-      setStatus("Add NEXT_PUBLIC_CONTACT_ENDPOINT to enable submissions.");
-      return;
-    }
-
     try {
       setSubmitting(true);
       const res = await fetch(endpoint, {
@@ -51,7 +46,9 @@ export function ContactForm() {
         body: JSON.stringify(form),
       });
 
-      if (!res.ok) throw new Error("Request failed");
+      if (!res.ok) {
+        throw new Error("Request failed");
+      }
 
       setStatus("Message sent successfully.");
       setForm(initialState);
