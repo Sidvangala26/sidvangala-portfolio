@@ -1,0 +1,7 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#09090B"/>
+  <circle cx="1200" cy="220" r="170" fill="#D4AF37" fill-opacity="0.14"/>
+  <path d="M0 720L220 620L420 720L620 560L820 760L1030 610L1240 820L1440 700L1600 780V1200H0V720Z" fill="#4C4130"/>
+  <path d="M0 820L220 760L420 830L620 700L820 900L1030 760L1240 940L1440 820L1600 880V1200H0V820Z" fill="#B08A4A" fill-opacity="0.75"/>
+  <text x="140" y="1090" fill="#E7CA73" fill-opacity="0.75" font-size="42" font-family="Georgia, serif">Atmospheric Landscape</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0B0B0D"></rect>
+  <circle cx="1240" cy="180" r="180" fill="#D4AF37" fill-opacity="0.12"></circle>
+  <rect x="90" y="90" width="1420" height="720" rx="36" fill="#141418" stroke="#D4AF37" stroke-opacity="0.22"></rect>
+  <text x="140" y="430" fill="#F5E6B3" font-size="64" font-family="Georgia, serif">Medium Article</text>
+  <text x="140" y="500" fill="#9CA3AF" font-size="28" font-family="Arial, sans-serif">No cover image available</text>
+</svg>

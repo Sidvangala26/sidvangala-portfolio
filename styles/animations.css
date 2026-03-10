@@ -1,0 +1,21 @@
+.fade-mask {
+  mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
+}
+
+.text-shimmer {
+  background-image: linear-gradient(110deg, #b78a28 25%, #f6df8d 45%, #b78a28 65%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -20% 0;
+  }
+}
