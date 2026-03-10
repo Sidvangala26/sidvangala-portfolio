@@ -15,23 +15,23 @@ export async function POST(req: Request) {
     }
 
     const response = await resend.emails.send({
-      from: "Portfolio <onboarding@resend.dev>",
-      to: ["vangalasiddardha@gmail.com"], // <-- change this
-      subject: `New Portfolio Message from ${name}`,
-      reply_to: email,
-      html: `
-        <h2>New Portfolio Contact</h2>
+	  from: "Portfolio <onboarding@resend.dev>",
+	  to: ["vangalasiddardha@gmail.com"],
+	  subject: `New Portfolio Message from ${name}`,
+	  replyTo: email,
+	  html: `
+		<h2>New Portfolio Contact</h2>
 
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
+		<p><strong>Name:</strong> ${name}</p>
+		<p><strong>Email:</strong> ${email}</p>
 
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
+		<p><strong>Message:</strong></p>
+		<p>${message}</p>
 
-        <hr />
-        <p>This message came from your portfolio contact form.</p>
-      `,
-    });
+		<hr />
+		<p>This message came from your portfolio contact form.</p>
+	  `,
+	});
 
     return NextResponse.json({ success: true, response });
   } catch (error) {
