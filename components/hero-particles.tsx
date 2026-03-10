@@ -67,7 +67,9 @@ export function HeroParticles() {
             enable: true,
             mode: "grab",
           },
-          resize: true,
+          resize: {
+            enable: true,
+          },
         },
         modes: {
           grab: {
