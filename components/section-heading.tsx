@@ -1,27 +1,32 @@
+import { Reveal } from "@/components/reveal";
+import type { ReactNode } from "react";
+
 export function SectionHeading({
   eyebrow,
   title,
   description,
 }: {
-  eyebrow: string
-  title: string
-  description?: string
+  eyebrow: string;
+  title: ReactNode;
+  description?: string;
 }) {
   return (
-    <div>
-      <p className="text-sm uppercase tracking-[0.3em] text-amber-400">
-        {eyebrow}
-      </p>
-
-      <h1 className="gradient-text mt-4 text-5xl md:text-7xl font-semibold leading-tight">
-        {title}
-      </h1>
-
-      {description && (
-        <p className="mt-6 max-w-3xl text-lg text-neutral-300 leading-8">
-          {description}
+    <Reveal>
+      <div className="max-w-4xl">
+        <p className="text-xs uppercase tracking-[0.35em] text-luxury-gold/90">
+          {eyebrow}
         </p>
-      )}
-    </div>
+
+        <h1 className="mt-6 font-display text-5xl leading-[0.95] md:text-7xl">
+          {title}
+        </h1>
+
+        {description ? (
+          <p className="mt-6 max-w-2xl text-base leading-8 text-neutral-300">
+            {description}
+          </p>
+        ) : null}
+      </div>
+    </Reveal>
   );
 }
