@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -18,6 +18,7 @@ const navItems = [
 export function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const navRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     function onScroll() {
@@ -28,6 +29,12 @@ export function Navbar() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    if (navRef.current) {
+      navRef.current.scrollLeft = 0;
+    }
+  }, [pathname]);
 
   return (
     <motion.header
@@ -55,7 +62,10 @@ export function Navbar() {
           transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
           className="rounded-full border px-3 py-2 sm:px-5 sm:py-3"
         >
-          <nav className="hide-scrollbar flex w-full items-center gap-1 overflow-x-auto whitespace-nowrap sm:justify-center sm:gap-2">
+          <nav
+            ref={navRef}
+            className="hide-scrollbar flex w-full items-center gap-1 overflow-x-auto whitespace-nowrap sm:justify-center sm:gap-2"
+          >
             {navItems.map((item) => {
               const active = pathname === item.href;
 

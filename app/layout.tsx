@@ -8,7 +8,7 @@ import { CustomCursor } from "@/components/custom-cursor";
 import { siteConfig } from "@/lib/site";
 import { PageTransition } from "@/components/page-transition";
 import { Spotlight } from "@/components/spotlight";
-
+import { ScrollToTop } from "@/components/scroll-to-top";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -55,6 +55,7 @@ export default function RootLayout({
         <SmoothScrollProvider>
           <CustomCursor />
           <Spotlight />
+		  <ScrollToTop />
           <div className="mesh-background" />
           <div className="relative min-h-screen overflow-hidden">
             <Navbar />
