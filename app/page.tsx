@@ -11,8 +11,8 @@ const expertise = [
     text: "Scalable APIs, distributed systems, microservices, data pipelines, and platform architecture focused on performance, reliability, and long-term maintainability.",
   },
   {
-    title: "Creative Direction",
-    text: "Premium digital storytelling, portfolio design, visual structure, and motion systems that make technical work feel refined and memorable.",
+    title: "Technical Writing",
+    text: "Published technical articles on AI agents, Model Context Protocol, and production AI infrastructure, translating complex engineering into clear and credible thought leadership.",
   },
 ];
 
@@ -30,8 +30,23 @@ const focusAreas = [
 const stats = [
   { label: "Experience", value: "8+ Years" },
   { label: "Leadership", value: "CTO Since 2017" },
-  { label: "Patent", value: "AR Innovation" },
-  { label: "AI Focus", value: "Last 2 Years" },
+  { label: "Patent", value: "U.S. Patent 11,610,355" },
+  { label: "Articles", value: "5 AI Publications" },
+];
+
+const featuredArticles = [
+  {
+    title: "MCP in Production: 7 Failure Modes Nobody Talks About",
+    publication: "Towards AI",
+    description:
+      "A production-focused breakdown of the hidden failure modes teams encounter when deploying Model Context Protocol systems at scale.",
+  },
+  {
+    title: "Why Most AI Agents Fail in Production (And How to Fix Them)",
+    publication: "Artificial Intelligence in Plain English",
+    description:
+      "An engineering-first look at the architectural gaps that separate impressive AI demos from reliable production agents.",
+  },
 ];
 
 export default function HomePage() {
@@ -47,15 +62,15 @@ export default function HomePage() {
             </p>
 
             <h1 className="gradient-text mt-6 max-w-6xl font-display text-5xl leading-[0.95] md:text-7xl xl:text-8xl">
-              Senior AI & Backend Engineer building systems that feel as premium
-              as they perform.
+              Senior AI Systems Engineer and Technical Author building
+              production AI systems and scalable backend platforms.
             </h1>
 
             <p className="mt-8 max-w-3xl text-base leading-8 text-neutral-300 md:text-lg">
               I design scalable AI platforms, backend architectures, and
-              intelligent automation systems for real production environments. My
-              work combines deep engineering, product thinking, and refined
-              digital presentation.
+              intelligent automation systems for real production environments.
+              My work combines deep engineering, product thinking, invention,
+              and refined digital presentation.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -77,7 +92,7 @@ export default function HomePage() {
                 href="/blog"
                 className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm text-white backdrop-blur-md transition hover:border-white/20 hover:bg-white/10"
               >
-                Read Articles
+                AI Engineering Articles
               </Link>
             </div>
           </div>
@@ -113,6 +128,59 @@ export default function HomePage() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="container-padding relative z-10 pb-16">
+        <div className="glass-surface noise-overlay relative overflow-hidden rounded-[34px] p-8 md:p-10 lg:p-12">
+          <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
+            <div>
+              <p className="text-xs uppercase tracking-[0.34em] text-luxury-gold/90">
+                Featured Writing
+              </p>
+
+              <h2 className="ai-gradient mt-5 text-3xl font-semibold leading-tight md:text-5xl">
+                Technical writing that extends engineering credibility beyond the
+                codebase.
+              </h2>
+
+              <p className="mt-6 max-w-4xl text-base leading-8 text-neutral-300">
+                I write about production AI agents, Model Context Protocol,
+                orchestration, backend reliability, and real-world system
+                design. My articles are built from engineering experience and
+                positioned to communicate thought leadership across platforms
+                like Towards AI and Artificial Intelligence in Plain English.
+              </p>
+
+              <div className="mt-8">
+                <Link
+                  href="/blog"
+                  className="inline-flex rounded-full border border-luxury-gold/30 bg-luxury-gold px-6 py-3 text-sm font-medium text-black transition hover:-translate-y-0.5"
+                >
+                  View All Articles
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid gap-5">
+              {featuredArticles.map((article) => (
+                <div
+                  key={article.title}
+                  className="rounded-[26px] border border-white/10 bg-white/5 p-6"
+                >
+                  <p className="text-sm uppercase tracking-[0.28em] text-neutral-400">
+                    {article.publication}
+                  </p>
+                  <h3 className="mt-4 text-xl font-semibold text-white md:text-2xl">
+                    {article.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-8 text-neutral-300 md:text-base">
+                    {article.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -179,7 +247,9 @@ export default function HomePage() {
                 <div className="mt-8 space-y-4">
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                     <p className="text-sm text-neutral-400">Milestone</p>
-                    <p className="mt-2 text-white">Patent recognized on 23 Jan 2019</p>
+                    <p className="mt-2 text-white">
+                      Patent recognized on 23 Jan 2019
+                    </p>
                   </div>
 
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -204,7 +274,7 @@ export default function HomePage() {
               </p>
 
               <h2 className="ai-gradient mt-5 text-3xl font-semibold leading-tight md:text-5xl">
-                Engineer, patent holder, technical writer, and founder-minded
+                Engineer, patent holder, technical author, and founder-minded
                 builder.
               </h2>
 
@@ -249,12 +319,24 @@ export default function HomePage() {
                     </p>
                   </div>
                   <div>
-                    <p className="text-sm text-neutral-400">Last 2 Years</p>
+                    <p className="text-sm text-neutral-400">Recent Years</p>
                     <p className="mt-2 text-lg text-white">
-                      Focused contribution to AI systems
+                      Production-focused AI systems engineering
                     </p>
                   </div>
                 </div>
+              </div>
+
+              <div className="rounded-[26px] border border-white/10 bg-white/5 p-6">
+                <p className="text-sm uppercase tracking-[0.28em] text-neutral-400">
+                  Technical Writing
+                </p>
+                <p className="mt-4 text-sm leading-8 text-neutral-300 md:text-base">
+                  Published multiple technical articles on AI agents, Model
+                  Context Protocol, and production AI infrastructure across
+                  leading Medium publications such as Towards AI and Artificial
+                  Intelligence in Plain English.
+                </p>
               </div>
 
               <div className="rounded-[26px] border border-white/10 bg-white/5 p-6">
@@ -263,8 +345,9 @@ export default function HomePage() {
                 </p>
                 <p className="mt-4 text-sm leading-8 text-neutral-300 md:text-base">
                   This portfolio is designed to communicate technical depth,
-                  premium execution, leadership, and originality — not just a
-                  list of skills, but a high-trust digital presence.
+                  premium execution, leadership, originality, and thought
+                  leadership — not just a list of skills, but a high-trust
+                  digital presence.
                 </p>
               </div>
             </div>
