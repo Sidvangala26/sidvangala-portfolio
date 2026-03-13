@@ -80,7 +80,7 @@ export default function ProjectsPage() {
     <div className="max-w-6xl mx-auto pt-32 pb-20 px-6 lg:px-8">
       <p className="text-sm uppercase tracking-[0.3em] text-amber-400">Projects</p>
 
-      <h1 className="mt-4 text-5xl md:text-7xl font-semibold text-white leading-tight">
+      <h1 className="mt-4 text-3xl md:text-5xl font-semibold text-white leading-tight">
         Systems, platforms, and technical work built for real-world use.
       </h1>
 

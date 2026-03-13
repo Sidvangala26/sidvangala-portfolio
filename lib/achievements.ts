@@ -16,11 +16,18 @@ export const achievements: TimelineItem[] = [
       "Contributing to enterprise-scale backend and AI systems with a focus on distributed services, operational automation, data workflows, and production engineering at scale.",
   },
   {
-    year: "Nov 2017 – Present",
-    title: "CTO & Co-Founder",
+    year: "2020 – Present",
+    title: "Technical Advisor & Advisory Board Member",
     subtitle: "Tiered World Studios",
     description:
-      "Co-founded Tiered World Studios and continue to lead technical strategy, platform architecture, and long-term product innovation across immersive XR, AI, and digital infrastructure initiatives.",
+      "Serving on the advisory board providing strategic guidance on AI systems architecture, immersive platform strategy, and long-term technology direction. Supporting innovation and product evolution through high-level technical advisory contributions.",
+  },
+  {
+    year: "Nov 2017 – Dec 2019",
+    title: "Co-Founder & Chief Technology Officer",
+    subtitle: "Tiered World Studios",
+    description:
+      "Co-founded Tiered World Studios and led the initial technical architecture, platform development, and product strategy across immersive XR and augmented-reality learning technologies during the company's early-stage development.",
   },
   {
     year: "2020",

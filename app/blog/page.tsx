@@ -77,7 +77,7 @@ export default function BlogPage() {
     <div className="max-w-6xl mx-auto pt-32 pb-20 px-6 lg:px-8">
       <p className="text-sm uppercase tracking-[0.3em] text-amber-400">Blog</p>
 
-      <h1 className="mt-4 text-5xl md:text-7xl font-semibold text-white leading-tight">
+      <h1 className="mt-4 text-3xl md:text-5xl font-semibold text-white leading-tight">
         Writing on AI systems, engineering, and modern agent architectures.
       </h1>
 

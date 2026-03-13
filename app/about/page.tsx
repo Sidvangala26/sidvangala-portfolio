@@ -4,21 +4,23 @@ import { HeroParticles } from "@/components/hero-particles";
 const highlights = [
   "8+ years building AI platforms, backend systems, and distributed applications",
   "Specialized in LLM agents, RAG pipelines, MCP, and production automation",
-  "Patent holder, co-founder, and technical leader across engineering and product systems",
+  "Patent holder, founder, and strategic technology advisor across engineering and product systems",
 ];
 
 export default function AboutPage() {
   return (
     <div className="max-w-6xl mx-auto pt-32 pb-20 px-6 lg:px-8">
       <div className="mb-14">
-        <p className="text-sm uppercase tracking-[0.3em] text-amber-400">About Me</p>
-        <h1 className="mt-4 text-5xl md:text-7xl font-semibold text-white leading-tight">
+        <p className="text-sm uppercase tracking-[0.3em] text-amber-400">
+          About Me
+        </p>
+        <h1 className="mt-4 text-3xl md:text-5xl font-semibold text-white leading-tight">
           Engineer. Builder. Creative technologist.
         </h1>
         <p className="mt-6 max-w-3xl text-lg text-neutral-300 leading-8">
           I build production-grade AI systems and premium digital experiences.
-          My work sits at the intersection of engineering, automation, product thinking,
-          and visual storytelling.
+          My work sits at the intersection of engineering, automation, product
+          thinking, and visual storytelling.
         </p>
       </div>
 
@@ -42,32 +44,39 @@ export default function AboutPage() {
 
             <div className="mt-5 space-y-5 text-neutral-300 leading-8">
               <HeroParticles />
+
               <p>
                 I’m Siddardha Vangala, a Senior AI & Backend Engineer with over
                 8 years of experience designing scalable distributed systems,
                 AI platforms, and production-ready LLM applications. My work
-                focuses on agent-driven architectures, RAG systems, enterprise
-                integrations, and backend platforms that create real operational value.
+                focuses on agent-driven architectures, retrieval systems,
+                enterprise integrations, and backend platforms that create real
+                operational value.
               </p>
 
               <p>
-                At MasTec, I’ve worked on AI automation platforms, secure tool-calling,
-                retrieval pipelines, microservices, and API modernization. I enjoy
-                building systems that are not only technically strong, but also usable,
-                maintainable, and aligned with business goals.
+                At MasTec, I work on AI automation platforms, secure
+                tool-calling, retrieval pipelines, microservices, and API
+                modernization. I enjoy building systems that are not only
+                technically strong, but also usable, maintainable, and aligned
+                with business goals.
               </p>
 
               <p>
-                Beyond engineering, I also care deeply about presentation and creative direction.
-                I believe strong technical work deserves a strong digital identity — one that feels
-                polished, intentional, and premium. That mindset shapes how I approach products,
-                branding, writing, and portfolio design.
+                My background also includes founding-stage product development,
+                patent-backed innovation, immersive technology, technical
+                writing, and long-term technology strategy. From 2017 to 2019,
+                I served in founding technical leadership at an early-stage
+                startup, and I have continued supporting innovation in a
+                strategic advisory capacity.
               </p>
 
               <p>
-                My background also includes AR/mobile development, patent-backed innovation,
-                technical writing, and startup leadership. I bring both execution depth and
-                long-term strategic thinking to the systems I build.
+                Beyond engineering, I care deeply about presentation and
+                creative direction. I believe strong technical work deserves a
+                strong digital identity — one that feels polished, intentional,
+                and premium. That mindset shapes how I approach products,
+                writing, branding, and portfolio design.
               </p>
             </div>
           </div>

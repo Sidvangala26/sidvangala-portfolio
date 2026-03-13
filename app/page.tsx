@@ -29,7 +29,7 @@ const focusAreas = [
 
 const stats = [
   { label: "Experience", value: "8+ Years" },
-  { label: "Leadership", value: "CTO Since 2017" },
+  { label: "Leadership", value: "Founder & Advisor Since 2017" },
   { label: "Patent", value: "U.S. Patent 11,610,355" },
   { label: "Articles", value: "5 AI Publications" },
 ];
@@ -61,7 +61,7 @@ export default function HomePage() {
               Siddardha Vangala
             </p>
 
-            <h1 className="gradient-text mt-6 max-w-6xl font-display text-5xl leading-[0.95] md:text-7xl xl:text-8xl">
+            <h1 className="gradient-text mt-6 max-w-6xl font-display text-2xl leading-[0.95] md:text-5xl xl:text-6xl">
               Senior AI Systems Engineer and Technical Author building
               production AI systems and scalable backend platforms.
             </h1>
@@ -305,8 +305,16 @@ export default function HomePage() {
                 </p>
                 <div className="mt-5 space-y-5">
                   <div className="border-b border-white/10 pb-4">
-                    <p className="text-sm text-neutral-400">Nov 2017 – Present</p>
-                    <p className="mt-2 text-lg text-white">CTO / Co-Founder</p>
+                    <p className="text-sm text-neutral-400">Nov 2017 – Dec 2019</p>
+                    <p className="mt-2 text-lg text-white">
+                      Co-Founder & Chief Technology Officer
+                    </p>
+                  </div>
+                  <div className="border-b border-white/10 pb-4">
+                    <p className="text-sm text-neutral-400">2020 – Present</p>
+                    <p className="mt-2 text-lg text-white">
+                      Advisory Board Member / Technical Advisor
+                    </p>
                   </div>
                   <div className="border-b border-white/10 pb-4">
                     <p className="text-sm text-neutral-400">23 Jan 2019</p>
