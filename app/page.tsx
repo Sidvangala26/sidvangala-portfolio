@@ -1,5 +1,9 @@
 import Link from "next/link";
 import { HeroParticles } from "@/components/hero-particles";
+import { JudgingEvaluationSection } from "@/components/judging-section";
+import { FeaturedInSection } from "@/components/media-section";
+import { getFeaturedJudgingEntries } from "@/lib/judging";
+import { getFeaturedMediaItems } from "@/lib/media";
 
 const expertise = [
   {
@@ -49,6 +53,9 @@ const featuredArticles = [
   },
 ];
 
+const featuredMediaItems = getFeaturedMediaItems(2);
+const featuredJudgingEntries = getFeaturedJudgingEntries(1);
+
 export default function HomePage() {
   return (
     <div className="relative min-h-screen text-white">
@@ -62,15 +69,17 @@ export default function HomePage() {
             </p>
 
             <h1 className="gradient-text mt-6 max-w-6xl font-display text-2xl leading-[0.95] md:text-5xl xl:text-6xl">
-              Senior AI Systems Engineer and Technical Author building
-              production AI systems and scalable backend platforms.
+              Senior AI Systems Engineer, Technical Author, Media Feature, and
+              Competition Judge building production AI systems and scalable
+              backend platforms.
             </h1>
 
             <p className="mt-8 max-w-3xl text-base leading-8 text-neutral-300 md:text-lg">
               I design scalable AI platforms, backend architectures, and
               intelligent automation systems for real production environments.
               My work combines deep engineering, product thinking, invention,
-              and refined digital presentation.
+              public credibility through media and judging, and refined digital
+              presentation.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -94,6 +103,20 @@ export default function HomePage() {
               >
                 AI Engineering Articles
               </Link>
+
+              <Link
+                href="/media"
+                className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm text-white backdrop-blur-md transition hover:border-white/20 hover:bg-white/10"
+              >
+                Media
+              </Link>
+
+              <Link
+                href="/judging"
+                className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm text-white backdrop-blur-md transition hover:border-white/20 hover:bg-white/10"
+              >
+                Judging
+              </Link>
             </div>
           </div>
         </div>
@@ -112,6 +135,10 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <FeaturedInSection items={featuredMediaItems} />
+
+      <JudgingEvaluationSection items={featuredJudgingEntries} />
 
       <section className="container-padding relative z-10 pb-16">
         <div className="grid gap-6 md:grid-cols-3">
