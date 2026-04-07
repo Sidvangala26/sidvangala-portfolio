@@ -11,6 +11,17 @@ export type MediaItem = {
 
 const items: MediaItem[] = [
   {
+    id: "cybernews-ai-secondhand-market-resale",
+    outlet: "Cybernews",
+    title: "Can AI buy and sell stuff on Vinted and Depop better than you?",
+    summary:
+      "Cybernews coverage on how AI can improve pricing, discovery, and seller workflows in secondhand marketplaces, featuring Siddardha Vangala's perspective on dynamic pricing and resale platform economics.",
+    href: "https://cybernews.com/ai-news/ai-secondhand-market-resale/",
+    publishedAt: "2026-04-03",
+    category: "Press",
+    featured: true,
+  },
+  {
     id: "power-mag-openai-helion",
     outlet: "POWER Magazine",
     title: "OpenAI in Talks With Helion to Secure Fusion Energy",
