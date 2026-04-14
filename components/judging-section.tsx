@@ -6,6 +6,7 @@ import type { JudgingEntry } from "@/lib/judging";
 
 function formatJudgingDate(value: string) {
   return new Date(value).toLocaleDateString("en-US", {
+    month: "long",
     year: "numeric",
   });
 }
@@ -21,11 +22,12 @@ export function JudgingGrid({
     <div className={cn("grid gap-5 md:grid-cols-2 xl:grid-cols-3", className)}>
       {items.map((item, index) => (
         <Reveal key={item.id} delay={index * 0.08}>
-          <a
-            href={item.href}
-            target="_blank"
-            rel="noreferrer"
-            className="group glass-surface noise-overlay relative flex h-full flex-col overflow-hidden rounded-[30px] p-7 transition duration-300 hover:-translate-y-1 hover:border-luxury-gold/25"
+          <article
+            className={`group glass-surface noise-overlay relative flex h-full flex-col overflow-hidden rounded-[30px] p-7 transition duration-300 ${
+              item.href
+                ? "hover:-translate-y-1 hover:border-luxury-gold/25"
+                : ""
+            }`}
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.12),transparent_34%)] opacity-70 transition duration-300 group-hover:opacity-100" />
 
@@ -39,7 +41,7 @@ export function JudgingGrid({
                 </div>
 
                 <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-neutral-300">
-                  Since {formatJudgingDate(item.startedAt)}
+                   {formatJudgingDate(item.startedAt)}
                 </span>
               </div>
 
@@ -55,12 +57,23 @@ export function JudgingGrid({
                 {item.summary}
               </p>
 
-              <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-luxury-gold">
-                View Program
-                <ArrowUpRight className="h-4 w-4 transition duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </div>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-luxury-gold"
+                >
+                  View Program
+                  <ArrowUpRight className="h-4 w-4 transition duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </a>
+              ) : (
+                <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-neutral-400">
+                  Invitation-only role
+                </div>
+              )}
             </div>
-          </a>
+          </article>
         </Reveal>
       ))}
     </div>
