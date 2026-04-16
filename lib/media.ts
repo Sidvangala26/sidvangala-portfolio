@@ -11,6 +11,17 @@ export type MediaItem = {
 
 const items: MediaItem[] = [
   {
+    id: "aijourn-ai-managers-first-generation",
+    outlet: "The AI Journal",
+    title: "Meet the First Generation of AI Managers Shaping the Role and What AI Success Looks Like",
+    summary:
+      "The AI Journal features Siddardha Vangala on the emerging role of AI managers — professionals who diagnose organizational needs, identify where AI genuinely fits, and establish governance frameworks. Vangala advocates honest assessment and defines a 1.5x efficiency threshold as a practical ROI benchmark for business AI decisions.",
+    href: "https://aijourn.com/meet-the-first-generation-of-ai-managers-shaping-the-role-and-what-ai-success-looks-like/",
+    publishedAt: "2026-04-14",
+    category: "Publication",
+    featured: true,
+  },
+  {
     id: "cybernews-ai-secondhand-market-resale",
     outlet: "Cybernews",
     title: "Can AI buy and sell stuff on Vinted and Depop better than you?",
