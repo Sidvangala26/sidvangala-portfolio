@@ -22,6 +22,17 @@ const items: MediaItem[] = [
     featured: true,
   },
   {
+    id: "nexairi-ai-reasoning-vs-coding-2026",
+    outlet: "Nexairi",
+    title: "Why AI Coding Tools Fail When Benchmarks Win: Developer Adoption Vs. Benchmark Rankings",
+    summary:
+      "Nexairi features Siddardha Vangala on why reasoning benchmarks fail to predict real-world coding usefulness. Vangala argues that coding demands syntactically valid, executable output that interacts correctly with real systems — a fundamentally harder problem than logical coherence — and that developer adoption hinges on how much cleanup is required after AI-generated output.",
+    href: "https://www.nexairi.com/article/Technology/ai-reasoning-vs-coding-developer-adoption-2026/",
+    publishedAt: "2026-04-17",
+    category: "Publication",
+    featured: true,
+  },
+  {
     id: "cybernews-ai-secondhand-market-resale",
     outlet: "Cybernews",
     title: "Can AI buy and sell stuff on Vinted and Depop better than you?",
