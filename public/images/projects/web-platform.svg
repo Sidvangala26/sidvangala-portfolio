@@ -1,0 +1,20 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#09090B"/>
+  <rect x="90" y="90" width="1420" height="1020" rx="44" fill="#111217" stroke="#D4AF37" stroke-opacity="0.22"/>
+  <circle cx="1325" cy="220" r="180" fill="#D4AF37" fill-opacity="0.12"/>
+  <rect x="180" y="180" width="1240" height="760" rx="28" fill="#161821" stroke="#F3DE9B" stroke-opacity="0.12"/>
+  <rect x="180" y="180" width="1240" height="84" rx="28" fill="#1D202A"/>
+  <circle cx="236" cy="222" r="10" fill="#F3DE9B" fill-opacity="0.9"/>
+  <circle cx="272" cy="222" r="10" fill="#D4AF37" fill-opacity="0.55"/>
+  <circle cx="308" cy="222" r="10" fill="#FFFFFF" fill-opacity="0.3"/>
+  <rect x="240" y="330" width="460" height="44" rx="22" fill="#EED48B" fill-opacity="0.88"/>
+  <rect x="240" y="404" width="620" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.18"/>
+  <rect x="240" y="446" width="540" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.12"/>
+  <rect x="240" y="530" width="280" height="280" rx="28" fill="#1F2330"/>
+  <rect x="560" y="530" width="280" height="280" rx="28" fill="#1B2231"/>
+  <rect x="880" y="330" width="440" height="480" rx="32" fill="#141821" stroke="#D4AF37" stroke-opacity="0.18"/>
+  <path d="M940 730C1000 620 1080 560 1180 560C1242 560 1292 580 1340 624V762H940V730Z" fill="#D4AF37" fill-opacity="0.42"/>
+  <path d="M606 606H794" stroke="#D4AF37" stroke-width="18" stroke-linecap="round"/>
+  <path d="M700 512V700" stroke="#D4AF37" stroke-width="18" stroke-linecap="round"/>
+  <text x="180" y="1065" fill="#F5E6B3" font-size="42" font-family="Georgia, serif">Web Interface / Product UI</text>
+</svg>

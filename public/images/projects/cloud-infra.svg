@@ -1,0 +1,18 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#09090B"/>
+  <rect x="90" y="90" width="1420" height="1020" rx="44" fill="#101217" stroke="#D4AF37" stroke-opacity="0.22"/>
+  <circle cx="1260" cy="230" r="190" fill="#D4AF37" fill-opacity="0.12"/>
+  <path d="M548 468C575 383 655 326 748 326C831 326 904 371 938 442C950 437 964 434 979 434C1040 434 1090 484 1090 545C1090 606 1040 656 979 656H592C511 656 446 591 446 510C446 445 489 389 548 468Z" fill="#1A1E27" stroke="#EED48B" stroke-opacity="0.3" stroke-width="8"/>
+  <rect x="288" y="774" width="280" height="156" rx="28" fill="#171A22" stroke="#EED48B" stroke-opacity="0.28"/>
+  <rect x="660" y="774" width="280" height="156" rx="28" fill="#171A22" stroke="#EED48B" stroke-opacity="0.28"/>
+  <rect x="1032" y="774" width="280" height="156" rx="28" fill="#171A22" stroke="#EED48B" stroke-opacity="0.28"/>
+  <circle cx="428" cy="852" r="18" fill="#D4AF37"/>
+  <circle cx="800" cy="852" r="18" fill="#D4AF37"/>
+  <circle cx="1172" cy="852" r="18" fill="#D4AF37"/>
+  <path d="M568 852H660" stroke="#D4AF37" stroke-width="14" stroke-linecap="round"/>
+  <path d="M940 852H1032" stroke="#D4AF37" stroke-width="14" stroke-linecap="round"/>
+  <path d="M800 656V738" stroke="#D4AF37" stroke-width="14" stroke-linecap="round"/>
+  <path d="M800 738H428V774" stroke="#D4AF37" stroke-width="14" stroke-linecap="round"/>
+  <path d="M800 738H1172V774" stroke="#D4AF37" stroke-width="14" stroke-linecap="round"/>
+  <text x="180" y="1065" fill="#F5E6B3" font-size="42" font-family="Georgia, serif">Cloud Infrastructure / DevOps</text>
+</svg>

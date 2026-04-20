@@ -1,8 +1,22 @@
 <svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="1200" fill="#0B0B0D"/>
-  <circle cx="1240" cy="220" r="220" fill="#D4AF37" fill-opacity="0.14"/>
-  <rect x="120" y="150" width="1360" height="900" rx="48" fill="#15151A" stroke="#D4AF37" stroke-opacity="0.25"/>
-  <path d="M380 870C510 700 610 610 740 610C900 610 970 760 1150 760C1250 760 1315 730 1390 675V930H250C280 914 332 897 380 870Z" fill="#C6A15B" fill-opacity="0.48"/>
-  <path d="M615 430C615 346.053 683.053 278 767 278H837C920.947 278 989 346.053 989 430V523C989 606.947 920.947 675 837 675H767C683.053 675 615 606.947 615 523V430Z" fill="#F2E1A8" fill-opacity="0.1" stroke="#E7CA73" stroke-opacity="0.3"/>
-  <text x="160" y="1090" fill="#E7CA73" fill-opacity="0.75" font-size="42" font-family="Georgia, serif">Editorial Portrait</text>
+  <rect width="1600" height="1200" fill="#09090B"/>
+  <rect x="90" y="90" width="1420" height="1020" rx="44" fill="#101217" stroke="#D4AF37" stroke-opacity="0.22"/>
+  <circle cx="1270" cy="220" r="190" fill="#D4AF37" fill-opacity="0.12"/>
+  <rect x="230" y="264" width="340" height="620" rx="30" fill="#161A22" stroke="#EED48B" stroke-opacity="0.18"/>
+  <rect x="630" y="264" width="340" height="620" rx="30" fill="#161A22" stroke="#EED48B" stroke-opacity="0.18"/>
+  <rect x="1030" y="264" width="340" height="620" rx="30" fill="#161A22" stroke="#EED48B" stroke-opacity="0.18"/>
+  <rect x="286" y="344" width="220" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.18"/>
+  <rect x="286" y="400" width="180" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.12"/>
+  <rect x="686" y="344" width="220" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.18"/>
+  <rect x="686" y="400" width="180" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.12"/>
+  <rect x="1086" y="344" width="220" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.18"/>
+  <rect x="1086" y="400" width="180" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.12"/>
+  <circle cx="800" cy="574" r="118" fill="#D4AF37" fill-opacity="0.12" stroke="#EED48B" stroke-opacity="0.34" stroke-width="10"/>
+  <circle cx="800" cy="574" r="42" fill="#F3DE9B"/>
+  <path d="M570 574H682" stroke="#D4AF37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M918 574H1030" stroke="#D4AF37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M800 456V344" stroke="#D4AF37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M800 692V804" stroke="#D4AF37" stroke-width="16" stroke-linecap="round"/>
+  <rect x="720" y="780" width="160" height="48" rx="24" fill="#EED48B" fill-opacity="0.88"/>
+  <text x="180" y="1065" fill="#F5E6B3" font-size="42" font-family="Georgia, serif">RAG / Retrieval Systems</text>
 </svg>

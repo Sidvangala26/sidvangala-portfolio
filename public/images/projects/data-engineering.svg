@@ -1,0 +1,19 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#09090B"/>
+  <rect x="90" y="90" width="1420" height="1020" rx="44" fill="#101217" stroke="#D4AF37" stroke-opacity="0.22"/>
+  <circle cx="1280" cy="250" r="210" fill="#D4AF37" fill-opacity="0.1"/>
+  <ellipse cx="370" cy="405" rx="150" ry="46" fill="#EED48B" fill-opacity="0.18" stroke="#EED48B" stroke-opacity="0.42"/>
+  <path d="M220 405V635C220 660.405 287.157 681 370 681C452.843 681 520 660.405 520 635V405" fill="#171A22" stroke="#EED48B" stroke-opacity="0.42" stroke-width="8"/>
+  <ellipse cx="370" cy="635" rx="150" ry="46" fill="#C6A15B" fill-opacity="0.18" stroke="#EED48B" stroke-opacity="0.42"/>
+  <ellipse cx="770" cy="525" rx="150" ry="46" fill="#EED48B" fill-opacity="0.18" stroke="#EED48B" stroke-opacity="0.42"/>
+  <path d="M620 525V755C620 780.405 687.157 801 770 801C852.843 801 920 780.405 920 755V525" fill="#171A22" stroke="#EED48B" stroke-opacity="0.42" stroke-width="8"/>
+  <ellipse cx="770" cy="755" rx="150" ry="46" fill="#C6A15B" fill-opacity="0.18" stroke="#EED48B" stroke-opacity="0.42"/>
+  <ellipse cx="1170" cy="405" rx="150" ry="46" fill="#EED48B" fill-opacity="0.18" stroke="#EED48B" stroke-opacity="0.42"/>
+  <path d="M1020 405V635C1020 660.405 1087.16 681 1170 681C1252.84 681 1320 660.405 1320 635V405" fill="#171A22" stroke="#EED48B" stroke-opacity="0.42" stroke-width="8"/>
+  <ellipse cx="1170" cy="635" rx="150" ry="46" fill="#C6A15B" fill-opacity="0.18" stroke="#EED48B" stroke-opacity="0.42"/>
+  <path d="M520 520C592 520 598 525 620 525" stroke="#D4AF37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M920 635C997 635 1008 635 1020 635" stroke="#D4AF37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M1170 320V260" stroke="#D4AF37" stroke-width="14" stroke-linecap="round"/>
+  <path d="M1140 290H1200" stroke="#D4AF37" stroke-width="14" stroke-linecap="round"/>
+  <text x="180" y="1065" fill="#F5E6B3" font-size="42" font-family="Georgia, serif">Data Pipelines / Analytics / ETL</text>
+</svg>

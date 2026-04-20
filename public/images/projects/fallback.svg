@@ -1,7 +1,15 @@
-<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="900" fill="#0B0B0D"></rect>
-  <circle cx="1240" cy="180" r="180" fill="#D4AF37" fill-opacity="0.12"></circle>
-  <rect x="90" y="90" width="1420" height="720" rx="36" fill="#141418" stroke="#D4AF37" stroke-opacity="0.22"></rect>
-  <text x="140" y="430" fill="#F5E6B3" font-size="64" font-family="Georgia, serif">Medium Article</text>
-  <text x="140" y="500" fill="#9CA3AF" font-size="28" font-family="Arial, sans-serif">No cover image available</text>
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#09090B"/>
+  <rect x="90" y="90" width="1420" height="1020" rx="44" fill="#101217" stroke="#D4AF37" stroke-opacity="0.22"/>
+  <circle cx="1280" cy="230" r="190" fill="#D4AF37" fill-opacity="0.12"/>
+  <rect x="240" y="250" width="1120" height="620" rx="34" fill="#151821" stroke="#EED48B" stroke-opacity="0.18"/>
+  <rect x="320" y="340" width="360" height="36" rx="18" fill="#EED48B" fill-opacity="0.88"/>
+  <rect x="320" y="412" width="520" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.16"/>
+  <rect x="320" y="460" width="460" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.12"/>
+  <rect x="320" y="578" width="220" height="180" rx="24" fill="#1F2330"/>
+  <rect x="584" y="578" width="220" height="180" rx="24" fill="#1B2231"/>
+  <rect x="848" y="578" width="220" height="180" rx="24" fill="#171A22"/>
+  <path d="M1160 360C1204.18 360 1240 395.817 1240 440V680" stroke="#D4AF37" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="1240" cy="718" r="22" fill="#F3DE9B"/>
+  <text x="180" y="1065" fill="#F5E6B3" font-size="42" font-family="Georgia, serif">Engineering Project</text>
 </svg>

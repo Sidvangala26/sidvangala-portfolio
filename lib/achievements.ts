@@ -2,28 +2,35 @@ import type { TimelineItem } from "@/components/timeline";
 
 export const achievements: TimelineItem[] = [
   {
-    year: "2024 – Present",
+    year: "2026 - Present",
+    title: "IEEE Senior Member",
+    subtitle: "Institute of Electrical and Electronics Engineers (IEEE)",
+    description:
+      "Recognized with IEEE Senior Member status, reflecting professional maturity, sustained technical contribution, and industry impact across AI systems, backend engineering, and innovation leadership.",
+  },
+  {
+    year: "2024 - Present",
     title: "Advanced AI Systems Development",
     subtitle: "LLM Agents / Automation / Infrastructure",
     description:
       "Building production-grade AI systems across agent workflows, retrieval pipelines, secure tool orchestration, and backend automation platforms for real-world engineering operations.",
   },
   {
-    year: "Dec 2019 – Present",
+    year: "Dec 2019 - Present",
     title: "Senior AI & Backend Engineering",
     subtitle: "MasTec",
     description:
       "Contributing to enterprise-scale backend and AI systems with a focus on distributed services, operational automation, data workflows, and production engineering at scale.",
   },
   {
-    year: "2020 – Present",
+    year: "2020 - Present",
     title: "Technical Advisor & Advisory Board Member",
     subtitle: "Tiered World Studios",
     description:
       "Serving on the advisory board providing strategic guidance on AI systems architecture, immersive platform strategy, and long-term technology direction. Supporting innovation and product evolution through high-level technical advisory contributions.",
   },
   {
-    year: "Nov 2017 – Dec 2019",
+    year: "Nov 2017 - Dec 2019",
     title: "Co-Founder & Chief Technology Officer",
     subtitle: "Tiered World Studios",
     description:

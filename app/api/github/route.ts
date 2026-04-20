@@ -39,6 +39,59 @@ function prettifyTitle(name: string) {
     .replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
+function chooseProjectImage(repo: GitHubRepo) {
+  if (imageMap[repo.name]) {
+    return imageMap[repo.name];
+  }
+
+  const searchable = [
+    repo.name,
+    repo.description || "",
+    repo.language || "",
+    ...(Array.isArray(repo.topics) ? repo.topics : []),
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  if (
+    /(rag|retrieval|vector|embedding|semantic search|knowledge base)/.test(
+      searchable
+    )
+  ) {
+    return "/images/projects/rag-system.svg";
+  }
+
+  if (/(agent|llm|ai | ai$|openai|langchain|langgraph|mcp|prompt)/.test(searchable)) {
+    return "/images/projects/ai-platform.svg";
+  }
+
+  if (
+    /(backend|api|fastapi|django|flask|express|microservice|worker|automation|service)/.test(
+      searchable
+    )
+  ) {
+    return "/images/projects/backend-automation.svg";
+  }
+
+  if (
+    /(react|next|frontend|ui|ux|tailwind|portfolio|website|dashboard)/.test(
+      searchable
+    )
+  ) {
+    return "/images/projects/web-platform.svg";
+  }
+
+  if (/(data|analytics|etl|pipeline|postgres|sql|scraper|scraping)/.test(searchable)) {
+    return "/images/projects/data-engineering.svg";
+  }
+
+  if (/(cloud|aws|azure|gcp|docker|kubernetes|terraform|infra|devops)/.test(searchable)) {
+    return "/images/projects/cloud-infra.svg";
+  }
+
+  return "/images/projects/fallback.svg";
+}
+
 export async function GET() {
   const username = "Sidvangala26";
   const endpoint = `https://api.github.com/users/${username}/repos?sort=updated&per_page=100`;
@@ -75,7 +128,7 @@ export async function GET() {
         language: repo.language || "Code",
         updatedAt: repo.updated_at,
         topics: Array.isArray(repo.topics) ? repo.topics.slice(0, 4) : [],
-        image: imageMap[repo.name] || "/images/projects/fallback.svg",
+        image: chooseProjectImage(repo),
       }));
 
     return NextResponse.json(projects);
@@ -95,7 +148,7 @@ export async function GET() {
           language: "TypeScript",
           updatedAt: new Date().toISOString(),
           topics: ["ai", "agents", "automation"],
-          image: "/images/projects/fallback.svg",
+          image: "/images/projects/ai-platform.svg",
         },
       ],
       { status: 200 }

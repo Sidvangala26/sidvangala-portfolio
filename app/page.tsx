@@ -4,6 +4,7 @@ import { JudgingEvaluationSection } from "@/components/judging-section";
 import { FeaturedInSection } from "@/components/media-section";
 import { getFeaturedJudgingEntries } from "@/lib/judging";
 import { getFeaturedMediaItems } from "@/lib/media";
+import { publications } from "@/lib/publications";
 
 const expertise = [
   {
@@ -35,7 +36,7 @@ const stats = [
   { label: "Experience", value: "8+ Years" },
   { label: "Leadership", value: "Founder & Advisor Since 2017" },
   { label: "Patent", value: "U.S. Patent 11,610,355" },
-  { label: "Articles", value: "5 AI Publications" },
+  { label: "Recognition", value: "IEEE Senior Member" },
 ];
 
 const featuredArticles = [
@@ -52,6 +53,8 @@ const featuredArticles = [
       "An engineering-first look at the architectural gaps that separate impressive AI demos from reliable production agents.",
   },
 ];
+
+const featuredResearch = publications[0];
 
 const featuredMediaItems = getFeaturedMediaItems(2);
 const featuredJudgingEntries = getFeaturedJudgingEntries(1);
@@ -102,6 +105,13 @@ export default function HomePage() {
                 className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm text-white backdrop-blur-md transition hover:border-white/20 hover:bg-white/10"
               >
                 AI Engineering Articles
+              </Link>
+
+              <Link
+                href="/publications"
+                className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm text-white backdrop-blur-md transition hover:border-white/20 hover:bg-white/10"
+              >
+                Publications
               </Link>
 
               <Link
@@ -206,6 +216,91 @@ export default function HomePage() {
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container-padding relative z-10 pb-16">
+        <div className="glass-surface noise-overlay relative overflow-hidden rounded-[34px] p-8 md:p-10 lg:p-12">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.12),transparent_34%)]" />
+
+          <div className="relative z-10 grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+            <div>
+              <p className="text-xs uppercase tracking-[0.34em] text-luxury-gold/90">
+                Research & Citation
+              </p>
+
+              <h2 className="mt-5 text-3xl font-semibold leading-tight text-white md:text-5xl">
+                Citable research that strengthens technical credibility beyond
+                product and platform work.
+              </h2>
+
+              <p className="mt-6 max-w-4xl text-base leading-8 text-neutral-300">
+                Alongside engineering systems and technical writing, I also
+                publish durable research artifacts intended to be referenced
+                directly. Featuring DOI-backed work here makes it easier for
+                collaborators, readers, and evaluators to discover and cite it.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-300">
+                  DOI Registered
+                </span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-300">
+                  Zenodo
+                </span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-neutral-300">
+                  Citation Ready
+                </span>
+              </div>
+            </div>
+
+            <div className="rounded-[28px] border border-white/10 bg-black/20 p-6 backdrop-blur-xl">
+              <div className="rounded-[24px] border border-luxury-gold/20 bg-gradient-to-br from-luxury-gold/10 to-white/5 p-6 md:p-7">
+                <p className="text-xs uppercase tracking-[0.3em] text-luxury-gold/90">
+                  Featured Record
+                </p>
+
+                <h3 className="mt-4 text-2xl font-semibold text-white md:text-3xl">
+                  {featuredResearch.title}
+                </h3>
+
+                <p className="mt-5 text-sm leading-8 text-neutral-300 md:text-base">
+                  {featuredResearch.description}
+                </p>
+
+                <div className="mt-8 space-y-4">
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-sm text-neutral-400">DOI</p>
+                    <p className="mt-2 break-all text-white">
+                      {featuredResearch.doi}
+                    </p>
+                  </div>
+
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-sm text-neutral-400">Recommended link</p>
+                    <a
+                      href={featuredResearch.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-2 inline-flex text-white transition hover:text-luxury-gold"
+                    >
+                      View DOI record {"->"}
+                    </a>
+                  </div>
+
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-sm text-neutral-400">Publications</p>
+                    <Link
+                      href="/publications"
+                      className="mt-2 inline-flex text-white transition hover:text-luxury-gold"
+                    >
+                      Browse publications {"->"}
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
