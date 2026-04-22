@@ -11,6 +11,17 @@ export type MediaItem = {
 
 const items: MediaItem[] = [
   {
+    id: "technewsworld-fomo-gpu-overbuying",
+    outlet: "TechNewsWorld",
+    title: "FOMO Driving GPU Overbuying, 95% of Capacity Idle",
+    summary:
+      "TechNewsWorld features Siddardha Vangala on the AI compute hoarding crisis — citing Cast AI data showing 95% of enterprise GPU capacity sits idle. Vangala argues that compute hoarding undermines the very outcomes it's meant to enable, pointing to infrastructure teams operating without utilization targets, cost accountability frameworks, or feedback loops connecting spend to production output.",
+    href: "https://www.technewsworld.com/story/fomo-driving-gpu-overbuying-95-of-capacity-idle-180292.html",
+    publishedAt: "2026-04-22",
+    category: "Press",
+    featured: true,
+  },
+  {
     id: "aijourn-ai-managers-first-generation",
     outlet: "The AI Journal",
     title: "Meet the First Generation of AI Managers Shaping the Role and What AI Success Looks Like",
